@@ -1,12 +1,8 @@
-n=int(input())
-s=0
-t=n
-l=len(str(n))
-for i in range(1,l+1):
-    r=n%10
-    s=s*10+r
-    n=n//10
-if s==t:
+n=input()
+s=n[::-1]
+n=int(n)
+s=int(s)
+if n==s:
     print(True)
 else:
     print(False)
