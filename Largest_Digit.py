@@ -1,8 +1,9 @@
-N=int(input())
-max=0
-while N>0:
-    digit=N%10
-    if max<digit:
-        max=digit
-    N=N//10
-print(max)
+n=int(input())
+a=0
+for i in range(len(str(n))):
+    r=n%10
+    if r>a:
+        a=r
+    n=n//10
+print(a)        
+       
